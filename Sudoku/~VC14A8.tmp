@@ -1,0 +1,480 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\shudu.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\shudu.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 316, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Sudoku"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,15,162,21,21
+    LTEXT           "Sudoku 1.0 beta版",IDC_STATIC,51,161,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2009.9",IDC_STATIC,49,175,119,8
+    DEFPUSHBUTTON   "确定",IDOK,253,169,50,14,WS_GROUP
+    GROUPBOX        "游戏帮助",IDC_STATIC,13,7,290,104
+    LTEXT           "　 【数独Sudoku】来自日文，但概念源自[拉丁方块]，是十八世纪瑞士数学家欧拉发明的。游戏中有9×9的方格，你需要把数字1-9填写到空格当中，并且使方格的每一行和每一列中都包含1-9这九个数字。同时要保证，空格中用粗线划分成9个3×3的方格也同时包含1-9这九个数字。               操作说明：选择适当难度，点击[新建游戏]开始。[清空谜题]可以将已",
+                    IDC_STATIC_help,26,24,266,40
+    GROUPBOX        "关于游戏",IDC_STATIC,14,115,289,41
+    LTEXT           "本游戏作者：张宏昊、姜莉、卜云、王苏芸。              160083最棒！！！",
+                    IDC_STATIC,29,131,222,16
+    LTEXT           "填入的数字全部清空。[显示解答]将公布答案。[提示开关]控制提示框的显示与否。[读取题目]可以读入外部特定格式的题目(.txt)，并开始游戏。[保存谜题]可以将当前题目与答案保存在与程序相同目录的Sudoku.txt中。",
+                    IDC_STATIC,26,64,268,24
+    LTEXT           "     感谢您使用本程序。祝您游戏愉快！",IDC_STATIC,22,94,
+                    149,8
+END
+
+IDD_SHUDU_DIALOG DIALOGEX 0, 0, 340, 234
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Sudoku"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "新建游戏",IDC_BUTTON_new,235,149,42,16
+    EDITTEXT        IDC_EDIT_a1,29,31,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_a2,47,31,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_a3,65,31,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_a4,29,49,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_a5,47,49,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_a6,65,49,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_a7,29,67,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_a8,47,67,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_a9,65,67,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_b1,87,31,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_b2,105,31,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_b3,123,31,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_b4,87,49,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_b5,105,49,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_b6,123,49,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_b7,87,67,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_b8,105,67,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_b9,123,67,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_c1,145,31,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_c2,163,31,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_c3,181,31,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_c4,145,49,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_c5,163,49,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_c6,181,49,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_c7,145,67,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_c8,163,67,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_c9,181,67,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_d1,29,89,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_d2,47,89,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_d3,65,89,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_d4,29,107,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_d5,47,107,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_d6,65,107,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_d7,29,125,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_d8,47,125,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_d9,65,125,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_e1,87,89,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_e2,105,89,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_e3,123,89,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_e4,87,107,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_e5,105,107,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_e6,123,107,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_e7,87,125,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_e8,105,125,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_e9,123,125,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_f1,145,89,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_f2,163,89,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_f3,181,89,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_f4,145,107,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_f5,163,107,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_f6,181,107,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_f7,145,125,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_f8,163,125,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_f9,181,125,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_x1,29,147,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_x2,47,147,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_x3,65,147,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_x4,29,165,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_x5,47,165,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_x6,65,165,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_x7,29,183,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_x8,47,183,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_x9,65,183,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_y1,87,147,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_y2,105,147,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_y3,123,147,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_y4,87,165,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_y5,105,165,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_y6,123,165,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_y7,87,183,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_y8,105,183,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_y9,123,183,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_z1,145,147,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_z2,163,147,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_z3,181,147,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_z4,145,165,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_z5,163,165,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_z6,181,165,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_z7,145,183,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_z8,163,183,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_z9,181,183,16,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "菜鸟",IDC_dif,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    249,117,30,9
+    CONTROL         "中等",IDC_dif2,"Button",BS_AUTORADIOBUTTON,287,117,30,9
+    CONTROL         "较难",IDC_dif3,"Button",BS_AUTORADIOBUTTON,249,129,30,9
+    CONTROL         "骨灰",IDC_dif4,"Button",BS_AUTORADIOBUTTON,287,129,30,9
+    PUSHBUTTON      "显示解答",IDC_BUTTON_show,235,169,42,16
+    PUSHBUTTON      "退出游戏",IDOK,288,209,42,16
+    PUSHBUTTON      "关于游戏",IDC_BUTTON_about,235,209,42,16
+    GROUPBOX        "计时",IDC_STATIC,241,25,84,34
+    CTEXT           "数独 Sudoku",IDC_STATIC,271,8,44,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_time,251,38,64,12,ES_CENTER | ES_AUTOHSCROLL,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "提示框",IDC_STATIC,241,61,84,42
+    EDITTEXT        IDC_EDIT_tips1,249,71,12,12,ES_CENTER | ES_AUTOHSCROLL
+    CTEXT           "1",IDC_STATIC,33,13,8,8
+    CTEXT           "2",IDC_STATIC,51,13,8,8
+    CTEXT           "3",IDC_STATIC,69,13,8,8
+    CTEXT           "4",IDC_STATIC,91,13,8,8
+    CTEXT           "5",IDC_STATIC,109,13,8,8
+    CTEXT           "6",IDC_STATIC,127,13,8,8
+    CTEXT           "7",IDC_STATIC,149,13,8,8
+    CTEXT           "8",IDC_STATIC,167,13,8,8
+    CTEXT           "9",IDC_STATIC,185,13,8,8
+    CTEXT           "A",IDC_STATIC,10,35,9,8
+    CTEXT           "B",IDC_STATIC,10,52,9,8
+    CTEXT           "C",IDC_STATIC,10,70,9,8
+    CTEXT           "D",IDC_STATIC,10,92,9,8
+    CTEXT           "E",IDC_STATIC,10,110,9,8
+    CTEXT           "F",IDC_STATIC,10,128,9,8
+    CTEXT           "G",IDC_STATIC,10,150,9,8
+    CTEXT           "H",IDC_STATIC,10,168,9,8
+    CTEXT           "I",IDC_STATIC,10,186,9,8
+    PUSHBUTTON      "清空谜题",IDC_BUTTON_clear,288,149,42,16
+    PUSHBUTTON      "保存谜题",IDC_BUTTON_save,288,189,42,16
+    GROUPBOX        "难度选择",IDC_STATIC,241,105,84,37
+    ICON            IDR_MAINFRAME,IDC_STATIC,247,2,20,20
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | WS_TABSTOP,23,25,
+                    180,6
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | WS_TABSTOP,23,83,
+                    180,6
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | WS_TABSTOP,23,141,
+                    180,6
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | WS_TABSTOP,23,199,
+                    180,6
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,23,25,6,180
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,197,25,7,180
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,81,25,6,180
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,139,25,6,180
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | WS_TABSTOP,23,47,
+                    180,2
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | WS_TABSTOP,23,65,
+                    180,2
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | WS_TABSTOP,23,105,
+                    180,2
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | WS_TABSTOP,23,123,
+                    180,2
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | WS_TABSTOP,23,163,
+                    180,2
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | WS_TABSTOP,23,181,
+                    180,2
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,179,25,2,179
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,161,25,2,179
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,121,25,2,179
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,103,25,2,179
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,63,25,2,179
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,45,25,2,179
+    EDITTEXT        IDC_EDIT_tips2,263,71,12,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_tips3,277,71,12,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_tips4,291,71,12,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_tips5,305,71,12,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_tips6,249,85,12,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_tips7,263,85,12,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_tips8,277,85,12,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_tips9,291,85,12,12,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "读取谜题",IDC_BUTTON_read,235,189,42,16
+    PUSHBUTTON      "提示开关",IDC_BUTTON_tipsoff,288,169,42,16
+    EDITTEXT        IDC_EDIT_tips_OnOff,305,85,12,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY,WS_EX_CLIENTEDGE
+    GROUPBOX        "",IDC_STATIC,214,11,9,209
+    LTEXT           "",IDC_STATIC,214,9,8,213
+    PUSHBUTTON      "音效开关",IDC_BUTTON1,49,210,50,16,BS_CENTER | 
+                    BS_VCENTER
+    PUSHBUTTON      "音乐开关",IDC_BUTTON2,128,210,50,16,BS_CENTER | 
+                    BS_VCENTER
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "zhh\0"
+            VALUE "FileDescription", "Sudoku Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Sudoku\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "shudu.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "shudu 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_SHUDU_DIALOG, DIALOG
+    BEGIN
+        TOPMARGIN, 2
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE_new            WAVE    DISCARDABLE     "res\\chimes.wav"
+IDR_WAVE_setfocus       WAVE    DISCARDABLE     "res\\Windows Navigation Start.wav"
+IDR_WAVE_setfocus1      WAVE    DISCARDABLE     "res\\Windows Pop-up Blocked.wav"
+IDR_WAVE_dif            WAVE    DISCARDABLE     "res\\Windows XP 气球.wav"
+IDR_WAVE_clean          WAVE    DISCARDABLE     "res\\Windows XP 回收.wav"
+IDR_WAVE_tipson         WAVE    DISCARDABLE     "res\\Sent.wav"
+IDR_WAVE_tipsoff        WAVE    DISCARDABLE     "res\\Dang.WAV"
+IDR_WAVE_show           WAVE    DISCARDABLE     "res\\Online.wav"
+IDR_WAVE_about          WAVE    DISCARDABLE     "res\\notify.wav"
+IDR_WAVE_checkRight     WAVE    DISCARDABLE     "res\\ding.wav"
+IDR_WAVE_checkWrong     WAVE    DISCARDABLE     "res\\Windows XP 叮当声.wav"
+IDR_WAVE_back1          WAVE    DISCARDABLE     "res\\_ghost_-_lullaby.wav"
+IDR_WAVE_back2          WAVE    DISCARDABLE     "res\\crayon07.wav"
+IDR_WAVE_back3          WAVE    DISCARDABLE     "res\\crayon_dreams.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 shudu(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\shudu.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
